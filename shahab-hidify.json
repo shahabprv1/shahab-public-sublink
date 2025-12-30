@@ -525,7 +525,6 @@ vless://57ba2ab1-a283-42eb-82ee-dc3561a805b8@104.21.3.219:8443/?type=ws&encrypti
 vless://4d7a559b-6379-41a7-9e51-41ef759846aa@94.159.99.211:443/?type=httpupgrade&encryption=none&flow=&path=%2F&security=tls&sni=ger4.nfnpx.online#%F0%9F%87%A9%F0%9F%87%AA%40shahabprv%20
 
 vless://eb162ab1-a006-4931-b1b3-8fc88a22b10e@185.92.183.112:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=vkru.outlinekeys.net&fp=chrome&security=reality&pbk=aCIjONksX6QbTfFBxN1eFqf5caspiR7QyttJ3kDH9yY&sid=#%F0%9F%87%AB%F0%9F%87%AE%40shahabprv%20
-
 port: 7890
 socks-port: 7891
 allow-lan: false
