@@ -613,9 +613,3 @@ proxies:
   - {"type":"vless","name":"🇭🇺shahabprv_10","server":"158.160.160.253","port":8443,"uuid":"97e10d36-c8fc-429a-b3d7-dcc67b718d0f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.apple.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇳🇱shahabprv_148","server":"yand51.volgaboost.ru","port":443,"uuid":"b95a44a7-c684-407b-b57e-e1681d69de90","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"api-maps.yandex.ru","tls":false,"udp":true}
   - {"type":"vless","name":"default_name_2","server":"94.156.115.109","port":443,"uuid":"9357d31a-97f5-492b-9a9d-24dcb3449fb9","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"tunnel.vk-apps.com","tls":false,"udp":true}
-
-proxy-groups:
-- name: PROXY
-  type: select
-  proxies:
-    - DIRECT
