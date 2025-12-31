@@ -5,7 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - DIRECT
   - {"type":"vless","name":"🇩🇪shahabprv_1","server":"46.224.123.11","port":31095,"uuid":"0fe18ae6-003c-49c4-9a19-894a26a6b3a9","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12---Join---Arshiavpn12"},"servername":"refersion.com"}
   - {"type":"vless","name":"🇳🇱shahabprv_1","server":"51.250.19.203","port":1488,"uuid":"5ba2e48a-d36c-40a5-a4a1-2819ed6efce5","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"ads.x5.ru","tls":false,"udp":true}
   - {"type":"vless","name":"🇳🇱shahabprv_2","server":"144.124.228.129","port":4443,"uuid":"ddffda27-8c5f-4f53-8450-4d11a1e0b368","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"github.com","tls":false,"udp":true}
@@ -613,3 +612,18 @@ proxies:
   - {"type":"vless","name":"🇩🇪shahabprv_112","server":"198.186.130.113","port":6673,"uuid":"eb774544-18d2-4f43-ad4a-df77ee6726d4","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT"},"servername":"@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT"}
   - {"type":"vless","name":"🇭🇺shahabprv_10","server":"158.160.160.253","port":8443,"uuid":"97e10d36-c8fc-429a-b3d7-dcc67b718d0f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.apple.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇳🇱shahabprv_148","server":"yand51.volgaboost.ru","port":443,"uuid":"b95a44a7-c684-407b-b57e-e1681d69de90","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"api-maps.yandex.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"default_name_2","server":"94.156.115.109","port":443,"uuid":"9357d31a-97f5-492b-9a9d-24dcb3449fb9","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"tunnel.vk-apps.com","tls":false,"udp":true}
+
+proxy-providers:
+  shahabprv:
+    type: file
+    path: ./providers/shahabprv.yaml
+    interval: 0
+
+proxy-groups:
+- name: PROXY
+  type: select
+  use:
+    - shahabprv
+  proxies:
+    - DIRECT
