@@ -1,7 +1,4 @@
-#profile-title: shahab-hidify
 subscription-userinfo: upload=0; download=25769803776; total=912680550400; expire=9999999999
-subscription-userinfo: upload=0; download=25769803776; total=912680550400; expire=9999999999
-#profile-expire: 0
 
 vless://de47ecbc-aa99-41cf-8484-7d300fbef83d@84.201.133.68:1443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yandex.ru&fp=chrome&security=reality&pbk=vrdiZRRV6VXQeFqAEV74VsNQztvN_bvIiKUqEXxNY18&sid=4cc61f10dc00ec7f#%F0%9F%87%A9%F0%9F%87%AA%40shahabprv%20
 
